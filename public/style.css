@@ -1,0 +1,104 @@
+body {
+    background-color: #16181c; 
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0f1419; 
+}
+
+/* Main heading style */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-top: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+
+/* Container styling for the input area */
+.tweet-input {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-end; /* Align button to top of textarea */
+    gap: 10px; /* Space between textarea and button */
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+/* Textarea styling */
+textarea {
+    flex-grow: 1; /* Makes the textarea take up available width */
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #2f3336;
+    border-radius: 10px;
+    resize: none;
+    background-color: #16181c;
+    color: #e7e9ea;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1c9cf6; /* Twitter's button color */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #158bdc; /* Darken on hover */
+}
+
+button:active {
+    background-color: #127cbf; /* Further darken on click */
+}
+
+
+/* Container styling for each tweet */
+.tweet {
+    background-color: #16181c; /* Dark background for tweets */
+    border: 1px solid #2f3336; /* Darker border for a modern look */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0;
+    max-width: 500px; /* Limit tweet width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Username styling */
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* White color for dark theme */
+    margin: 0;
+}
+
+/* Content styling */
+.content {
+    font-size: 14px;
+    color: #e7e9ea; /* Light grey text for content */
+    margin-top: 5px;
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Styling for tweet container on hover */
+.tweet:hover {
+    background-color: #1c1f23; /* Slightly darker on hover */
+    transition: background-color 0.3s ease;
+}
