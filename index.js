@@ -75,6 +75,14 @@ app.post("/update/:id",(req,res)=>{
     tweet.content=newContent;
     res.redirect("/");
 })
+// Delete route
+app.post("/delete/:id",(req,res)=>{
+    const tweetId=req.params.id;
+    // console.log(tweetId);
+    const tweet=tweets.find((t)=>t.id=tweetId);
+    tweets.splice(tweet,1);
+    res.redirect("/");
+})
 
 // Start the server
 app.listen(port, () => {

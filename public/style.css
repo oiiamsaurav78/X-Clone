@@ -110,3 +110,7 @@ button:active {
     cursor: pointer;            /* Pointer cursor on hover */
     border-radius: 5px;        /* Rounded corners */
 }
+.Delete{
+    margin-left: 50%;
+    background-color: black;
+}

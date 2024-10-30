@@ -15,7 +15,7 @@
         <!-- Tweet Input Form -->
         <form class="tweet-form" method="post" action="/post">
             <div class="tweet-input">
-                <textarea rows="4" cols="40" placeholder="What is happening?" name="content"></textarea>
+                <textarea rows="4" cols="58" placeholder="What is happening?" name="content"></textarea>
                 <input type="text" name="username" placeholder="Enter your username">
                 <button type="submit" >Post</button>
             </div>
@@ -28,6 +28,11 @@
                     <h3 class="username">@<%= tweet.username %></h3>
                     <p class="content"><%= tweet.content %></p>
                     <a href="http://localhost:8080/edit/<%=tweet.id %>"><button class="Edit " >Edit tweet</button></a>
+                    <form action="/delete/<%= tweet.id %>" method="POST" style="display: inline;">
+                        <button type="submit" class="Delete">Delete tweet</button>
+                    </form>
+                    
+
                     
         
                 </div>
