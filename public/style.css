@@ -16,6 +16,11 @@ h1 {
     color: #ffffff; 
     margin-top: 20px;
 }
+h3{
+    font-weight: bold;
+    color: #ffffff; 
+    margin-top: 20px;
+}
 
 /* Form styling */
 form {
@@ -113,4 +118,27 @@ button:active {
 .Delete{
     margin-left: 50%;
     background-color: black;
+}
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Aligns items to both ends */
+    align-items: center; /* Vertically center items */
+    padding: 10px 20px; /* Padding for the header */
+    background-color: #16181c; /* Same background color as the body */
+    border-bottom: 1px solid #2f3336; /* Bottom border for separation */
+}
+
+/* Home button styling */
+.home-button {
+    color: #1c9cf6; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    padding: 10px 15px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.home-button:hover {
+    background-color: rgba(28, 156, 246, 0.1); /* Light background on hover */
 }
