@@ -102,3 +102,11 @@ button:active {
     background-color: #1c1f23; /* Slightly darker on hover */
     transition: background-color 0.3s ease;
 }
+.edit {
+    background-color: #007bff; /* Button background color */
+    color: white;               /* Button text color */
+    border: none;               /* Remove border */
+    padding: 5px 10px;         /* Padding for button */
+    cursor: pointer;            /* Pointer cursor on hover */
+    border-radius: 5px;        /* Rounded corners */
+}

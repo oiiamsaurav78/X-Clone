@@ -52,6 +52,29 @@ app.post("/post",(req,res)=>{
     
 
 })
+// Edit route
+app.get("/edit/:id", (req, res) => {
+    const tweetId = req.params.id; 
+    // console.log("Editing tweet with ID:", tweetId);
+    const tweet = tweets.find(t => t.id === tweetId); 
+
+    if (tweet) {
+        res.render("edit", { tweet }); 
+    } else {
+        res.status(404).send("Tweet not found"); 
+    }
+});
+// update route
+app.post("/update/:id",(req,res)=>{
+    const tweetId = req.params.id; 
+    // console.log(tweetId);
+    // console.log("inside update");
+    let {newContent}=req.body;
+    // console.log(newContent)
+    const tweet = tweets.find(t => t.id === tweetId); 
+    tweet.content=newContent;
+    res.redirect("/");
+})
 
 // Start the server
 app.listen(port, () => {

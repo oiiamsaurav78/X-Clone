@@ -17,7 +17,7 @@
             <div class="tweet-input">
                 <textarea rows="4" cols="40" placeholder="What is happening?" name="content"></textarea>
                 <input type="text" name="username" placeholder="Enter your username">
-                <button type="submit">Post</button>
+                <button type="submit" >Post</button>
             </div>
         </form> 
 
@@ -27,6 +27,9 @@
                 <div class="tweet">
                     <h3 class="username">@<%= tweet.username %></h3>
                     <p class="content"><%= tweet.content %></p>
+                    <a href="http://localhost:8080/edit/<%=tweet.id %>"><button class="Edit " >Edit tweet</button></a>
+                    
+        
                 </div>
             <% } %>
         </section>
